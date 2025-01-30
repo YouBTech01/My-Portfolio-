@@ -1,0 +1,148 @@
+/* Dark Mode Variables */
+[data-theme="dark"] {
+    --primary-color: #00BFFF;
+    --secondary-color: #1E90FF;
+    --text-color: #E4E4E4;
+    --background-color: #121212;
+    --muted-text: #A0A0A0;
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --card-border: rgba(255, 255, 255, 0.1);
+    --nav-bg: rgba(18, 18, 18, 0.8);
+    --hover-color: #33CCFF;
+}
+
+/* Dark Mode Transitions */
+body, 
+.navbar, 
+.card, 
+.btn, 
+.social-stat-card,
+.about-card,
+.project-card,
+.skill-card {
+    transition: all 0.3s ease;
+}
+
+/* Dark Mode Styles */
+[data-theme="dark"] {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Navbar Dark Mode */
+[data-theme="dark"] .navbar {
+    background: var(--nav-bg);
+    backdrop-filter: blur(20px) saturate(180%);
+    border-bottom: 1px solid var(--card-border);
+}
+
+/* Cards Dark Mode */
+[data-theme="dark"] .about-card,
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .skill-card,
+[data-theme="dark"] .social-stat-card {
+    background: var(--card-bg);
+    border-color: var(--card-border);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons Dark Mode */
+[data-theme="dark"] .btn.secondary {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+[data-theme="dark"] .btn.primary {
+    background: var(--primary-color);
+    color: #121212;
+}
+
+[data-theme="dark"] .btn:hover {
+    box-shadow: 0 5px 15px rgba(0, 191, 255, 0.3);
+}
+
+/* Progress Bars Dark Mode */
+[data-theme="dark"] .progress-bar {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Text and Icons Dark Mode */
+[data-theme="dark"] .section-title,
+[data-theme="dark"] .card-header h3 {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .nav-links a {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .platform-link {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+}
+
+/* Form Elements Dark Mode */
+[data-theme="dark"] input,
+[data-theme="dark"] textarea {
+    background: var(--card-bg);
+    border-color: var(--card-border);
+    color: var(--text-color);
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.dark-mode-toggle:hover {
+    transform: rotate(15deg);
+}
+
+[data-theme="dark"] .dark-mode-toggle i {
+    color: #FDB813;
+}
+
+/* Hover Effects in Dark Mode */
+[data-theme="dark"] .about-card:hover,
+[data-theme="dark"] .project-card:hover,
+[data-theme="dark"] .skill-card:hover,
+[data-theme="dark"] .social-stat-card:hover {
+    box-shadow: 0 8px 30px rgba(0, 191, 255, 0.2);
+    border-color: var(--primary-color);
+}
+
+/* Gradient Effects Dark Mode */
+[data-theme="dark"] .hero {
+    background: linear-gradient(135deg, rgba(0,191,255,0.05) 0%, rgba(30,144,255,0.05) 100%);
+}
+
+/* Social Icons Dark Mode */
+[data-theme="dark"] .social-link {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .social-link:hover {
+    color: var(--primary-color);
+}
+
+/* Particles Dark Mode */
+[data-theme="dark"] #particles-js {
+    opacity: 0.5;
+}
+
+/* Mobile Menu Dark Mode */
+@media (max-width: 768px) {
+    [data-theme="dark"] .nav-links {
+        background: var(--nav-bg);
+    }
+
+    [data-theme="dark"] .hamburger span {
+        background: var(--text-color);
+    }
+} 

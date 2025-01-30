@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>BKC - Developer & YouTuber</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Particle.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Tilt.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    
+    <!-- ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+
+    <!-- Add in head section -->
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="googlebot" content="noindex,nofollow">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">BKC</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#youtube">YouTube</a>
+            <a href="#contact">Contact</a>
+            <button id="darkModeToggle" class="dark-mode-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+        <button class="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <div class="profile-container" data-aos="fade-right">
+                <div class="profile-wrapper" data-tilt>
+                    <div class="profile-image" oncontextmenu="return false">
+                        <img 
+                            src="1.jpg" 
+                            alt="Brajendra" 
+                            draggable="false"
+                            oncontextmenu="return false"
+                            onselectstart="return false"
+                            onkeydown="return false"
+                        >
+                    </div>
+                    <div class="profile-circle"></div>
+                    <div class="profile-glow"></div>
+                </div>
+            </div>
+            <div class="hero-text" data-aos="fade-left">
+                <div class="greeting">
+                    <span class="wave">👋</span>
+                    <span class="age-tag">17 years old</span>
+                </div>
+                <h1>Hey, I'm Brajendra</h1>
+                <div class="typing-text">
+                    I'm <span class="typed-text"></span>
+                </div>
+                <p class="hero-description">Owner of You B Tech | Creating tech content and building awesome apps</p>
+                <div class="cta-buttons">
+                    <a href="https://www.instagram.com/you_b_tech" class="btn primary" target="_blank">
+                        <span>Let's Talk</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="https://github.com/YouBTech01" class="btn secondary" target="_blank">
+                        <i class="fas fa-download"></i>
+                        <span>Resume</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-grid">
+                <!-- Profile Info Card -->
+                <div class="about-card main-info" data-aos="fade-up">
+                    <div class="card-header">
+                        <i class="fas fa-user-circle"></i>
+                        <h3>Who I Am</h3>
+                    </div>
+                    <div class="profile-info">
+                        <ul class="info-list">
+                            <li><span>Name:</span> Brajendra</li>
+                            <li><span>Age:</span> 17 years</li>
+                            <li><span>Location:</span> Madhya Pradesh, India</li>
+                        </ul>
+                        <p class="bio">I am an art, computer science, and tech student with a passion for coding and digital innovation. I combine creativity with technology in my projects, focusing on mobile apps and YouTube content.</p>
+                    </div>
+                </div>
+
+                <!-- Interests & Hobbies Card -->
+                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header">
+                        <i class="fas fa-heart"></i>
+                        <h3>Interests & Hobbies</h3>
+                    </div>
+                    <div class="interests-grid">
+                        <div class="interest-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>Technology</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>App Development</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-robot"></i>
+                            <span>AI</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Gaming</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-book"></i>
+                            <span>Reading</span>
+                        </div>
+                        <div class="interest-item">
+                            <i class="fas fa-music"></i>
+                            <span>Music</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievements Card -->
+                <div class="about-card achievements" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Achievements</h3>
+                    </div>
+                    <ul class="achievement-list">
+                        <li>Developed and launched an E-commerce app with features like user and order management.</li>
+                        <li>Built a YouTube channel, "You B Tech," with videos reaching over 300,000 views.</li>
+                        <li>Gained hands-on experience in Flutter, HTML, CSS, and JavaScript.</li>
+                    </ul>
+                </div>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+            
+            <!-- Development Skills -->
+            <div class="skills-category" data-aos="fade-up">
+                <h3 class="category-title">Development Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon">
+                            <i class="fab fa-flutter"></i>
+                        </div>
+                        <h3>Flutter Development</h3>
+                        <p>Cross-Platform Apps, UI/UX Design, Backend Integration</p>
+                        <div class="progress-bar">
+                            <div class="progress" data-value="95"></div>
+                        </div>
+                        <span class="percentage">21%</span>
+                    </div>
+
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon">
+                            <i class="fab fa-android"></i>
+                        </div>
+                        <h3>Android Native</h3>
+                        <p>Java, Kotlin, Native App Development</p>
+                        <div class="progress-bar">
+                            <div class="progress" data-value="90"></div>
+                        </div>
+                        <span class="percentage">57%</span>
+                    </div>
+
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3>Python Development</h3>
+                        <p>Automation, Web Scraping, Data Science</p>
+                        <div class="progress-bar">
+                            <div class="progress" data-value="85"></div>
+                        </div>
+                        <span class="percentage">55%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Creation Skills -->
+            <div class="skills-category" data-aos="fade-up">
+                <h3 class="category-title">Content Creation</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <h3>Tech Tutorials</h3>
+                        <p>Educational Content, Programming Tutorials, Tech Reviews</p>
+                        <div class="progress-bar">
+                            <div class="progress" data-value="95"></div>
+                        </div>
+                        <span class="percentage">95%</span>
+                    </div>
+
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI & Prompt Engineering</h3>
+                        <p>AI Tools, Prompt Crafting, No-Code Solutions</p>
+                        <div class="progress-bar">
+                            <div class="progress" data-value="90"></div>
+                        </div>
+                        <span class="percentage">85%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Development Skills -->
+            <div class="skills-category" data-aos="fade-up">
+                <h3 class="category-title">Web Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                        <p>HTML5, CSS3, JavaScript, Responsive Design</p>
+                        <div class="progress-bar">
+                            <div class="progress" data-value="85"></div>
+                        </div>
+                        <span class="percentage">45%</span>
+                    </div>
+
+                    <div class="skill-card" data-tilt>
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Backend Development</h3>
+                        <p>API Integration, Database Management, Security</p>
+                        <div class="progress-bar">
+                            <div class="progress" data-value="80"></div>
+                        </div>
+                        <span class="percentage">71%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3>You B Tech Channel</h3>
+                    <p>Educational YouTube channel focused on technology and programming tutorials.</p>
+                    <a href="https://youtube.com/@you_b_tech" class="btn primary" target="_blank">View Channel</a>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-Commerce App</h3>
+                    <p>A full-featured e-commerce application with modern UI and functionality.</p>
+                    <a href="http://aichatbotybt.great-site.net" class="btn primary" target="_blank">View Project</a>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub Projects</h3>
+                    <p>Explore more of my amazing projects and contributions on GitHub.</p>
+                    <a href="https://github.com/YouBTech01" class="btn primary" target="_blank">View Projects</a>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram Projects</h3>
+                    <p>Check out my other projects and development journey on Instagram.</p>
+                    <a href="https://www.instagram.com/you_b_tech" class="btn primary" target="_blank">View More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social-media" class="social-media">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Social Media Presence</h2>
+            <div class="social-stats-grid">
+                <div class="social-stat-card youtube" data-aos="fade-up">
+                    <div class="platform-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <div class="platform-info">
+                        <h3>YouTube</h3>
+                        <div class="stat-number">
+                            <span class="counter" data-target="30000">0</span>
+                            <span class="stat-label">Subscribers</span>
+                        </div>
+                        <a href="https://youtube.com/c/YouBTech" class="platform-link" target="_blank">
+                            <span>Visit Channel</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="social-stat-card instagram" data-aos="fade-up" data-aos-delay="100">
+                    <div class="platform-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <div class="platform-info">
+                        <h3>Instagram</h3>
+                        <div class="stat-number">
+                            <span class="counter" data-target="21000">0</span>
+                            <span class="stat-label">Followers</span>
+                        </div>
+                        <a href="https://instagram.com/you_b_tech" class="platform-link" target="_blank">
+                            <span>Follow Me</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="social-stat-card telegram" data-aos="fade-up" data-aos-delay="200">
+                    <div class="platform-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <div class="platform-info">
+                        <h3>Telegram</h3>
+                        <div class="stat-number">
+                            <span class="counter" data-target="7000">0</span>
+                            <span class="stat-label">Members</span>
+                        </div>
+                        <a href="https://t.me/YouBTech" class="platform-link" target="_blank">
+                            <span>Join Channel</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="social-stat-card github" data-aos="fade-up" data-aos-delay="300">
+                    <div class="platform-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="platform-info">
+                        <h3>GitHub</h3>
+                        <div class="stat-number">
+                            <span class="counter" data-target="67">0</span>
+                            <span class="stat-label">Followers</span>
+                        </div>
+                        <a href="https://github.com/YouBTech01" class="platform-link" target="_blank">
+                            <span>Follow Me</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+            <div class="contact-content">
+                <form class="contact-form" data-aos="fade-right">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+                <div class="social-links" data-aos="fade-left">
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Brajendra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/dark-mode.js"></script>
+</body>
+</html> 
