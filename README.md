@@ -2,7 +2,7 @@
 
 Welcome to my portfolio! This website showcases my skills, projects, and achievements in tech, coding, and content creation.  
 
-## 🌟 About Me  
+## 🌟 About Mi
 I am an art, computer science, and tech student from Madhya Pradesh, India. Passionate about coding and digital innovation, I work on mobile app development, AI, and YouTube content creation.  
 
 ## 🔥 Skills  
